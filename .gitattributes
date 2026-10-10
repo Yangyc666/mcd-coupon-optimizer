@@ -1,0 +1,10 @@
+# 统一使用 LF，保证在 Windows / macOS / Linux 下检出结果一致
+* text=auto eol=lf
+
+# 二进制文件不做换行符转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

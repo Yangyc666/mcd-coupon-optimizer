@@ -1,0 +1,180 @@
+{
+  "ok": true,
+  "version": "0.1.0",
+  "assumption": "默认一单仅使用一张优惠券；如实际可叠加需调整算法。",
+  "wanted": {
+    "matched": [
+      "麦乐鸡（5块）",
+      "中薯条",
+      "可乐（中）"
+    ],
+    "missed": [],
+    "base_total": "33.00"
+  },
+  "baseline_no_coupon": {
+    "items": [
+      {
+        "code": "S001",
+        "name": "麦乐鸡（5块）",
+        "price_cents": 1250,
+        "role": "wanted",
+        "qty": 1
+      },
+      {
+        "code": "S003",
+        "name": "中薯条",
+        "price_cents": 1100,
+        "role": "wanted",
+        "qty": 1
+      },
+      {
+        "code": "D001",
+        "name": "可乐（中）",
+        "price_cents": 950,
+        "role": "wanted",
+        "qty": 1
+      }
+    ],
+    "payable_cents": 3300,
+    "payable": "33.00"
+  },
+  "plans": [
+    {
+      "rank": 1,
+      "coupon": {
+        "id": "C002",
+        "name": "满30元减6元",
+        "kind": "threshold_reduce",
+        "rule": "满 30.00 元减 6.00 元",
+        "min_spend_cents": 3000,
+        "source": "my",
+        "scope_keywords": []
+      },
+      "items": [
+        {
+          "code": "S001",
+          "name": "麦乐鸡（5块）",
+          "price": "12.50",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "S003",
+          "name": "中薯条",
+          "price": "11.00",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "D001",
+          "name": "可乐（中）",
+          "price": "9.50",
+          "qty": 1,
+          "role": "wanted"
+        }
+      ],
+      "original_total": "33.00",
+      "discount": "6.00",
+      "payable": "27.00",
+      "payable_cents": 2700,
+      "net_saving": "6.00",
+      "topup_total": "0.00",
+      "advice": "无需凑单，直接用券即可"
+    },
+    {
+      "rank": 2,
+      "coupon": {
+        "id": "C001",
+        "name": "满35元减10元",
+        "kind": "threshold_reduce",
+        "rule": "满 35.00 元减 10.00 元",
+        "min_spend_cents": 3500,
+        "source": "store",
+        "scope_keywords": []
+      },
+      "items": [
+        {
+          "code": "S001",
+          "name": "麦乐鸡（5块）",
+          "price": "12.50",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "S003",
+          "name": "中薯条",
+          "price": "11.00",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "D001",
+          "name": "可乐（中）",
+          "price": "9.50",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "T001",
+          "name": "圆筒冰淇淋",
+          "price": "6.00",
+          "qty": 1,
+          "role": "topup"
+        }
+      ],
+      "original_total": "39.00",
+      "discount": "10.00",
+      "payable": "29.00",
+      "payable_cents": 2900,
+      "net_saving": "4.00",
+      "topup_total": "6.00",
+      "advice": "为达到满 35.00 元门槛，加购 圆筒冰淇淋（共 6.00 元）"
+    },
+    {
+      "rank": 3,
+      "coupon": {
+        "id": "C003",
+        "name": "立减2元",
+        "kind": "cash",
+        "rule": "立减 2.00 元",
+        "min_spend_cents": 0,
+        "source": "my",
+        "scope_keywords": [
+          "无门槛"
+        ]
+      },
+      "items": [
+        {
+          "code": "S001",
+          "name": "麦乐鸡（5块）",
+          "price": "12.50",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "S003",
+          "name": "中薯条",
+          "price": "11.00",
+          "qty": 1,
+          "role": "wanted"
+        },
+        {
+          "code": "D001",
+          "name": "可乐（中）",
+          "price": "9.50",
+          "qty": 1,
+          "role": "wanted"
+        }
+      ],
+      "original_total": "33.00",
+      "discount": "2.00",
+      "payable": "31.00",
+      "payable_cents": 3100,
+      "net_saving": "2.00",
+      "topup_total": "0.00",
+      "advice": "无需凑单，直接用券即可"
+    }
+  ],
+  "skipped_coupons": [],
+  "summary": "最省方案：用【满30元减6元】，实付 27.00 元，比原价省 6.00 元。"
+}

@@ -1,0 +1,37 @@
+{
+  "intent": {
+    "wanted": ["麦乐鸡（5块）", "中薯条", "可乐（中）"],
+    "note": "想到店取餐，看看怎么买最省"
+  },
+  "menu": [
+    {"code": "B001", "name": "巨无霸", "price": 23.5, "category": "汉堡"},
+    {"code": "B002", "name": "麦辣鸡腿堡", "price": 21.5, "category": "汉堡"},
+    {"code": "B003", "name": "板烧鸡腿堡", "price": 22.0, "category": "汉堡"},
+    {"code": "B004", "name": "麦香鱼", "price": 17.0, "category": "汉堡"},
+    {"code": "B005", "name": "双层吉士汉堡", "price": 17.5, "category": "汉堡"},
+    {"code": "B006", "name": "吉士汉堡", "price": 12.0, "category": "汉堡"},
+    {"code": "S001", "name": "麦乐鸡（5块）", "price": 12.5, "category": "小食"},
+    {"code": "S002", "name": "麦乐鸡（10块）", "price": 22.5, "category": "小食"},
+    {"code": "S003", "name": "中薯条", "price": 11.0, "category": "小食"},
+    {"code": "S004", "name": "大薯条", "price": 13.5, "category": "小食"},
+    {"code": "S005", "name": "小薯条", "price": 8.0, "category": "小食"},
+    {"code": "S006", "name": "麦辣鸡翅（2块）", "price": 13.0, "category": "小食"},
+    {"code": "D001", "name": "可乐（中）", "price": 9.5, "category": "饮品"},
+    {"code": "D002", "name": "可乐（大）", "price": 10.5, "category": "饮品"},
+    {"code": "D003", "name": "雪碧（中）", "price": 9.5, "category": "饮品"},
+    {"code": "D004", "name": "橙汁", "price": 12.0, "category": "饮品"},
+    {"code": "T001", "name": "圆筒冰淇淋", "price": 6.0, "category": "甜品"},
+    {"code": "T002", "name": "麦旋风（奥利奥）", "price": 11.5, "category": "甜品"},
+    {"code": "T003", "name": "香芋派", "price": 7.5, "category": "甜品"},
+    {"code": "T004", "name": "新地冰淇淋", "price": 8.5, "category": "甜品"}
+  ],
+  "coupons": [
+    {"id": "C001", "name": "满35元减10元", "desc": "门店专享", "source": "store"},
+    {"id": "C002", "name": "满30元减6元", "desc": "全场通用", "source": "my"},
+    {"id": "C003", "name": "立减2元", "desc": "无门槛", "source": "my"}
+  ],
+  "options": {
+    "top_n": 3,
+    "allow_topup": true
+  }
+}
